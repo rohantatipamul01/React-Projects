@@ -38,13 +38,12 @@ function App()
         {todos.map((todo, index) => (
           <li key={index}>
             {todo}
-            <button onClick={() => deleteTaskById(index)}>Delete</button>         
           </li>
         ))}
 
       </ul>
 
-      <button onClick={() => deleteTaskById(todos.length - 1)}>Delete</button>
+      <button onClick={deleteTaskById(index)}>Delete</button>
       <button onClick={deleteTask}>Delete ALL</button>
     </>
   );
